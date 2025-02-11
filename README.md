@@ -23,7 +23,7 @@ For the first 3 questions, use the included file `records.json`. It contains 100
 ### Question 1 (code required): 
 Provide 2 or 3 different ways to print out the IDs of the 3 users with logins closest to 2025-02-01 00:00 UTC.
 
-We are not looking for the most optimal code, but a variety of methods you could use calculate the smallest different and why you would select one method over another.
+We are not looking for the most optimal code, but a variety of methods you could use calculate the smallest difference and why you would select one method over another.
 
 ### Question 2 (code required): 
 Provide 2 or 3 different ways to print out the IDs of the 2 users who logged in at the closest time to each other, along with the times of login.
