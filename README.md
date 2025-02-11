@@ -38,7 +38,7 @@ Which algorithm performed best? Which algorithm performed worst? And why? What i
 Conceptually, what are the different tools such as code libraries or infrastructure that could help you 
 find the smallest non-negative difference between 1 million lists that are 5,000 integers long?
 
-## Question 4
+## Question 4 (Optional - may require AWS Free Tier account)
 ### Log Analysis and Alerting
 
 This assignment tests your AWS and Python data engineering skills by building a simplified log analysis and alerting system.
