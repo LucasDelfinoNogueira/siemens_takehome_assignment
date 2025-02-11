@@ -57,7 +57,7 @@ You have a single application generating logs.  You need to monitor these logs f
 
 3. **Alerting:** If the error string is found, trigger an alert.  For simplicity, just print a message to the console (CloudWatch Logs) indicating an alert has been triggered.  You don't need to integrate with an external alerting service.
 
-4. **Infrastructure as Code:**  Use the AWS CDK (Python) to define and deploy the Lambda function and any necessary supporting resources (e.g., an SQS queue if you want to decouple ingestion and processing, though this is optional for the simplified version).
+4. **Infrastructure as Code:**  Use the AWS CDK (Python) to define the Lambda function and any necessary supporting resources (e.g., an SQS queue if you want to decouple ingestion and processing, though this is optional for the simplified version).
 
 5. **Testing:** Provide a script to generate sample log entries and demonstrate how to trigger the alert.
 
