@@ -39,7 +39,7 @@ Conceptually, what are the different tools such as code libraries or infrastruct
 find the smallest non-negative difference between 1 million lists that are 5,000 integers long?
 
 ## Question 4
-### Take-Home Assignment: Log Analysis and Alerting (Simplified)
+### Log Analysis and Alerting (Simplified)
 
 This assignment tests your AWS and Python data engineering skills by building a simplified log analysis and alerting system.
 
@@ -65,7 +65,6 @@ You have a single application generating logs.  You need to monitor these logs f
 
 **Simplified Example Log Entry:**
 
-```json
 {"message": "Application started successfully."}
 
 
