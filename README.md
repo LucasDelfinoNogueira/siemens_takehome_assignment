@@ -66,8 +66,3 @@ You have a single application generating logs.  You need to monitor these logs f
 **Simplified Example Log Entry:**
 
 {"message": "Application started successfully."}
-
-
-
-
-
