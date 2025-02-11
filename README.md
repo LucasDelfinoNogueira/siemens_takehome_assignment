@@ -38,3 +38,37 @@ Which algorithm performed best? Which algorithm performed worst? And why? What i
 Conceptually, what are the different tools such as code libraries or infrastructure that could help you 
 find the smallest non-negative difference between 1 million lists that are 5,000 integers long?
 
+## Question 4
+### Take-Home Assignment: Log Analysis and Alerting (Simplified)
+
+This assignment tests your AWS and Python data engineering skills by building a simplified log analysis and alerting system.
+
+**Scenario:**
+
+You have a single application generating logs.  You need to monitor these logs for specific error messages and trigger alerts when they occur.
+
+**Requirements:**
+
+1. **Log Ingestion:**  Simulate a log stream (e.g., a Python script generating log entries).  Each log entry should be a JSON string with a "message" field.
+
+2. **Real-time Processing:** Use AWS Lambda to process these log entries in real-time.  The Lambda function should:
+    * Parse the JSON log entry.
+    * Check if the "message" field contains a specific error string (e.g., "ERROR_CODE_123").
+
+3. **Alerting:** If the error string is found, trigger an alert.  For simplicity, just print a message to the console (CloudWatch Logs) indicating an alert has been triggered.  You don't need to integrate with an external alerting service.
+
+4. **Infrastructure as Code:**  Use the AWS CDK (Python) to define and deploy the Lambda function and any necessary supporting resources (e.g., an SQS queue if you want to decouple ingestion and processing, though this is optional for the simplified version).
+
+5. **Testing:** Provide a script to generate sample log entries and demonstrate how to trigger the alert.
+
+6. **Documentation:** Include a README explaining your design and how to run the test script.
+
+**Simplified Example Log Entry:**
+
+```json
+{"message": "Application started successfully."}
+
+
+
+
+
