@@ -21,12 +21,12 @@ For the first 3 questions, use the included file `records.json`. It contains 100
 ```
 
 ### Question 1 (code required): 
-Write a small application to print out the IDs of the 3 users with logins closest to 2025-02-01 00:00 UTC.
+Write a small application to print out the IDs of the 3 users with logins closest to 2025-02-01 00:00 UTC. Your result should be the ones closest in absolute terms, that is, either before or after that date.
 
 We are not looking for the most optimal code, but a variety of methods you could use calculate the smallest difference and why you would select one method over another.
 
 ### Question 2 (code required): 
-Write a small application to print out the IDs of the 2 users who logged in at the closest time to each other, along with the times of login.
+Write a small application to print out the IDs of the 2 users who logged in at the closest time to each other, along with the times of login. These should be the two users with the closest login times of all the users in the data set.
 
 Again, we are not looking for the most optimal code, but a variety of plausible approaches.
 
