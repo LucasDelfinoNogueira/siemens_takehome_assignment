@@ -36,7 +36,7 @@ pip install -r solution/requirements.txt
 
 > Find the 3 users whose login times are closest to `2025-02-01 00:00 UTC`.
 
-📂 [See solution and explanation](solution/question1)
+📂 [See solution and explanation](./question1)
 
 ---
 
@@ -44,7 +44,7 @@ pip install -r solution/requirements.txt
 
 > Identify the 2 users whose login times are closest together.
 
-📂 [See solution and explanation](solution/question2)
+📂 [See solution and explanation](./question2)
 
 ---
 
@@ -52,7 +52,7 @@ pip install -r solution/requirements.txt
 
 > Describe how to approach the same login problem if analyzing 1 million+ streaming records.
 
-📂 [See solution and explanation](solution/question3)
+📂 [See solution and explanation](./question3)
 
 ---
 
@@ -65,6 +65,6 @@ pip install -r solution/requirements.txt
 - AWS SNS for alerting
 - AWS CDK (Python) for Infrastructure as Code
 
-📂 [See solution and explanation](solution/question4)
+📂 [See solution and explanation](./question4)
 
 ---
