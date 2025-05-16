@@ -3,11 +3,23 @@ Solution 2b: Using pandas to find the two users
 with the smallest login-time difference, with hardcoded JSON path.
 """
 
+__owner__ = "Lucas Delfino"
+__created_at__ = "2025-05-16"
+__updated_at__ = "2025-05-16"
+
 import pandas as pd
 import os
+from pandas import DataFrame, Series
+from typing import Tuple
 
-def load_records():
-    """Load records from the hard‑coded JSON file two levels up."""
+
+def load_records() -> DataFrame:
+    """
+    Load user records from the records.json file into a pandas DataFrame.
+
+    Returns:
+        DataFrame: DataFrame containing user records.
+    """
     here = os.path.dirname(__file__)
     path = os.path.abspath(os.path.join(here, '..', '..', 'records.json'))
     
@@ -15,8 +27,13 @@ def load_records():
 
 def find_closest_pair(df):
     """
-    Find two users with minimal login time difference.
-    Returns two pandas Series: row1, row2.
+    Find two users with the smallest difference in `last_login` time.
+
+    Args:
+        df (DataFrame): DataFrame with at least 'id' and 'last_login' columns.
+
+    Returns:
+        Tuple[Series, Series]: Two Series objects representing the closest user records.
     """
     df['last_login'] = pd.to_datetime(df['last_login'], utc=True)
     df = df.sort_values('last_login').reset_index(drop=True)
@@ -25,8 +42,12 @@ def find_closest_pair(df):
     
     return df.iloc[idx - 1], df.iloc[idx]
 
-def main():
-    """Main entry point."""
+
+def main() -> None:
+    """
+    Load records and print the two user IDs and their login times
+    with the smallest login-time difference.
+    """
     df = load_records()
     row1, row2 = find_closest_pair(df)
     print(f"{row1['id']} {row1['last_login'].isoformat()}")

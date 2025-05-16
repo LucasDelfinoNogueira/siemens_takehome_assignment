@@ -4,22 +4,42 @@ Solution 2a: Using json and datetime to find the two users
 with the smallest login-time difference, with hardcoded JSON path.
 """
 
-import json
-from datetime import datetime
-import os
+__owner__ = "Lucas Delfino"
+__created_at__ = "2025-05-16"
+__updated_at__ = "2025-05-16"
 
-def load_records():
-    """Load records from the hard-coded JSON file two levels up."""
+import json
+import os
+from datetime import datetime
+from typing import List, Dict, Tuple
+
+
+def load_records() -> List[Dict[str, str]]:
+    """
+    Load records from the hard-coded records.json file located two levels up.
+
+    Returns:
+        List[Dict[str, str]]: List of user record dictionaries.
+    """
     here = os.path.dirname(__file__)
     path = os.path.abspath(os.path.join(here, '..', '..', 'records.json'))
-    
+
     with open(path) as f:
         return json.load(f)
 
 def find_closest_pair(records):
     """
-    Find two users with minimal login time difference.
-    Returns a tuple: (id1, time1, id2, time2).
+    Find two users with the smallest difference in `last_login` time.
+
+    Args:
+        records (List[Dict[str, str]]): List of user records with 'id' and 'last_login' keys.
+
+    Returns:
+        Tuple[str, datetime, str, datetime]: Tuple containing:
+            - first user id
+            - first login datetime
+            - second user id
+            - second login datetime
     """
     data = []
     for r in records:
@@ -42,8 +62,12 @@ def find_closest_pair(records):
 
     return best
 
-def main():
-    """Main entry point."""
+
+def main() -> None:
+    """
+    Load records and print the two user IDs and their login times
+    with the smallest login-time difference.
+    """
     records = load_records()
     id1, t1, id2, t2 = find_closest_pair(records)
     print(f"{id1} {t1.isoformat()}")
