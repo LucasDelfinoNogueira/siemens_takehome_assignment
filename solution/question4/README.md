@@ -18,6 +18,7 @@ DATA_HOMEWORK/
     └── question4/
         ├── aws_stack_deployment/           # CDK infrastructure code
         │   ├── app.py
+        │   ├── cdk.json
         │   ├── stacks/
         │       ├── sqs_stack.py
         │       ├── sns_stack.py
