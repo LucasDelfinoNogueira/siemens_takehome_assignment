@@ -23,7 +23,7 @@ DATA_HOMEWORK/
         │       ├── sns_stack.py
         │       └── lambda_stack.py
         │   └── lambda/
-        │       ├── alert_handler.py # Lambda function logic
+        │       └── alert_handler.py # Lambda function logic
         ├── log_producer.py          # Python script to send logs
         ├── secrets.env              # Environment variables
         ├── requirements.txt
