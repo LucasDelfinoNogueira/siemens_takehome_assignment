@@ -13,17 +13,17 @@ This project simulates a real-time log analysis and alerting system using AWS se
 ## 📁 Project Structure
 
 ```
-DATA_HOMEWORK-2/
+DATA_HOMEWORK/
 └── solution/
     └── question4/
         ├── aws_stack_deployment/   # CDK infrastructure code
         │   ├── app.py
-        │   └── stacks/
+        │   ├── stacks/
         │       ├── sqs_stack.py
         │       ├── sns_stack.py
         │       └── lambda_stack.py
-        ├── lambda/
-        │   └── alert_handler.py     # Lambda function logic
+        │   └── lambda/
+        │       ├── alert_handler.py # Lambda function logic
         ├── log_producer.py          # Python script to send logs
         ├── secrets.env              # Environment variables
         ├── requirements.txt
