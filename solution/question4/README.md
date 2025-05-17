@@ -13,7 +13,7 @@ This project simulates a real-time log analysis and alerting system using AWS se
 ## 📁 Project Structure
 
 ```
-DATA_HOMEWORK/
+siemens_takehome_assignment/
 └── solution/
     └── question4/
         ├── aws_stack_deployment/           # CDK infrastructure code
